@@ -1,0 +1,68 @@
+
+.Network Configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Availability Zones
+(`AvailabilityZones`)|`**__Requires Input__**`|The list of Availability Zones to use for the subnets in the VPC. You must specify two Availability Zones. By default, the Quick Start preserves the logical order you specify.|VPC Definition
+(`VPCDefinition`)|`QuickstartDefault`|VPC definition name from the Mappings section of the template. Each definition specifies a VPC configuration, including the number of Availability Zones to be used for the deployment and the CIDR blocks for the VPC, public subnets, and private subnets. You can support multiple VPC configurations  by extending the map with additional definitions and choosing the appropriate name. If you don’t want to change the VPC configuration, keep the default setting. For more information, see the Adding VPC Definitions section.
+|===
+.S3 Bucket Configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Submissions Bucket Name
+(`SubmissionsBucketName`)|`datalake-submissions`|The name of the S3 submission bucket. A random string will be appended to ensure uniqueness.|Curated Datasets Bucket Name
+(`CuratedDatasetsName`)|`datalake-curated-datasets`|The name of the S3 curated datasets bucket. A random string will be appended to ensure uniqueness.|Published Data Bucket Name
+(`PublishedDataName`)|`datalake-published-data`|The name of the S3 published data bucket. A random string will be appended to ensure uniqueness.|Regional Lambda Bucket Name
+(`RegionalLambdaBucketName`)|`regional-lambda-bucket`|The name of the S3 regional lambda bucket. A random string will be appended to ensure uniqueness.|Athena Query Results Bucket Name
+(`AthenaQueryResultsBucketName`)|`datalake-athena-query-results`|The name of the S3 Athena query results bucket. A random string will be appended to ensure uniqueness.
+|===
+.Elasticsearch Configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Remote Access CIDR
+(`RemoteAccessCIDR`)|`**__Requires Input__**`|The CIDR IP range that is permitted to SSH into the bastion host instance and access Amazon ES. We recommend that you set this value to a trusted IP range. For example, you might want to grant only your corporate network access to the software. You can use http://checkip.amazonaws.com/  to check your IP address. This parameter must be in the form x.x.x.x/x (e.g., 96.127.8.12/32, YOUR_IP/32).|ElasticsearchDomainName
+(`ElasticsearchDomainName`)|`datalake-quickstart`|Elasticsearch Domain Name. Must start with a lowercase letter and contain only letters, numbers, and -|Elasticsearch Node Type
+(`ElasticsearchNodeType`)|`r5.large.elasticsearch`|EC2 instance type for the Elasticsearch cluster.|Elasticsearch Node Count
+(`ElasticsearchNodeCount`)|`1`|The number of nodes in the Elasticsearch cluster. For guidance, see the Amazon ES documentation.|Elasticsearch EBS Volume Type
+(`ElasticsearchEBSVolumeType`)|`gp2`|EBS Volume Type
+|===
+.Redshift Configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Enable Redshift
+(`EnableRedshift`)|`yes`|Specifies whether Amazon Redshift will be provisioned  Set to no if you don’t want to provision the Amazon Redshift cluster.|Make Redshift publicly accessible
+(`MakeRedshiftPubliclyAccessible`)|`yes`|Specifies whether Amazon Redshift will be publicly accessible. Only applies if EnableRedshift is set to yes.|Redshift User Name
+(`RedshiftUsername`)|`datalake`|The user name that is associated with the master user account for the Amazon Redshift cluster. The user name must contain fewer than 128 alphanumeric characters or underscores, and must be lowercase and begin with a letter. |Redshift Password
+(`RedshiftPassword`)|`**__Requires Input__**`|The password that is associated with the master user account for the Amazon Redshift cluster. The password must contain 8 to 64 printable ASCII characters, excluding: /, ", \', \ and @. It must contain one uppercase letter, one lowercase letter, and one number.|Redshift Number of Nodes
+(`RedshiftNumberOfNodes`)|`1`|The number of nodes in the Amazon Redshift cluster. If you specify a number that’s larger than 1, the Quick Start will launch a multi-node cluster.|Redshift Node Type
+(`RedshiftNodeType`)|`dc2.large`|Instance type for the nodes in the Amazon Redshift cluster.|Redshift Database Name
+(`RedshiftDatabaseName`)|`quickstart`|The name of the first database to be created when the Amazon Redshift cluster is provisioned.|Redshift Database Port
+(`RedshiftDatabasePort`)|`5439`|The port that Amazon Redshift will listen on, which will be allowed through the security group.|Redshift Data Encrypted
+(`RedshiftEncrypted`)|`false`|Determines whether the Redshift data is encrypted at rest|Redshift snapshot retention in days
+(`RedshiftSnapshotRetention`)|`1`|Retention period for Redshift snapshots in days. If set to 0, snapshots are disabled.
+|===
+.Kinesis Configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Kinesis Data Stream Name
+(`KinesisDataStreamName`)|`streaming-submissions`|Name of the Kinesis data stream.|Kinesis Data Stream S3 Prefix
+(`KinesisDataStreamS3Prefix`)|`streaming-submissions`|S3 key prefix for your streaming data stored in the S3 submissions bucket. This prefix can include numbers, lowercase letters, uppercase letters, hyphens, and forward slashes, but should not start with a forward slash, which is automatically added. Use this parameter to specify the location for the streaming data you’d like to load.|Kinesis S3 Prefix for Error Objects
+(`KinesisErrorOutputPrefix`)|`**__Requires Input__**`|S3 prefix for error objects (optional)|Kinesis Data Stream S3 Compression Format
+(`KinesisCompressionFormat`)|`UNCOMPRESSED`|Kinesis stream S3 compression format
+|===
+.SageMaker Configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Notebook Instance Name
+(`NotebookInstanceName`)|`NotebookInstanceName`|Name of the Amazon SageMaker Notebook instance.|Notebook Instance Type
+(`NotebookInstanceType`)|`ml.t3.large`|The EC2 instance type for the data lake Amazon SageMaker Notebook instance.
+|===
+.AWS Quick Start Configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Quick Start S3 Bucket Name
+(`QSS3BucketName`)|`aws-quickstart`|S3 bucket where the Quick Start templates and scripts are installed. Use this parameter to specify the S3 bucket name you’ve created for your copy of Quick Start assets, if you decide to customize or extend the Quick Start for your own use. The bucket name can include numbers, lowercase letters, uppercase letters, and hyphens, but should not start or end with a hyphen.|Quick Start S3 bucket region
+(`QSS3BucketRegion`)|`us-east-1`|The AWS Region where the Quick Start S3 bucket (QSS3BucketName) is hosted. When using your own bucket, you must specify this value.|Quick Start S3 Key Prefix
+(`QSS3KeyPrefix`)|`quickstart-datalake-foundation/`|S3 key prefix used to simulate a folder for your copy of Quick Start assets, if you decide to customize or extend the Quick Start for your own use. This prefix can include numbers, lowercase letters, uppercase letters, hyphens, and forward slashes.|Key Pair Name
+(`KeyPairName`)|`**__Requires Input__**`|Public/private key pairs allow you to securely connect to your instance after it launches
+|===
