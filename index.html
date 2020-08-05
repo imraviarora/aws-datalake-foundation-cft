@@ -786,8 +786,8 @@ table p {
 <ul class="sectlevel2">
 <li><a href="#_sign_in_to_your_aws_account">Sign in to your AWS account</a></li>
 <li><a href="#_launch_the_quick_start">Launch the Quick Start</a></li>
-<li><a href="#_launch_into_a_new_vpc">Launch into a new VPC</a></li>
 <li><a href="#_launch_into_an_existing_vpc">Launch into an existing VPC</a></li>
+<li><a href="#_launch_into_a_new_vpc">Launch into a new VPC</a></li>
 </ul>
 </li>
 <li><a href="#_test_the_deployment">Test the deployment</a></li>
@@ -816,7 +816,6 @@ table p {
 </div>
 <div class="paragraph text-center">
 <p><strong>August, 2020</strong><br>
-<em>{partner-contributors}</em><br>
 <em>Dave May, AWS Quick Start Team</em></p>
 </div>
 <div class="admonitionblock tip text-left">
@@ -833,7 +832,7 @@ report bugs, or submit feature ideas for this Quick Start.
 </table>
 </div>
 <div class="paragraph text-left">
-<p>This Quick Start was created by {partner-company-name} in collaboration with Amazon Web Services (AWS). <a href="http://aws.amazon.com/quickstart/" target="_blank" rel="noopener">Quick Starts</a> are automated reference deployments that use AWS CloudFormation templates to deploy key technologies on AWS, following AWS best practices.</p>
+<p>This Quick Start was created by Amazon Web Services (AWS). <a href="http://aws.amazon.com/quickstart/" target="_blank" rel="noopener">Quick Starts</a> are automated reference deployments that use AWS CloudFormation templates to deploy key technologies on AWS, following AWS best practices.</p>
 </div>
 </div>
 </div>
@@ -1359,7 +1358,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 </div>
 </div>
 <div class="sect2">
-<h3 id="_launch_into_a_new_vpc">Launch into a new VPC</h3>
+<h3 id="_launch_into_an_existing_vpc">Launch into an existing VPC</h3>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 1. Network Configuration</caption>
 <colgroup>
@@ -1376,16 +1375,52 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Availability Zones
-(<code>AvailabilityZones</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC ID
+(<code>VPCID</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The list of Availability Zones to use for the subnets in the VPC. You must specify two Availability Zones. By default, the Quick Start preserves the logical order you specify.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID of your existing VPC (e.g., vpc-0343606e).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">VPC Definition
-(<code>VPCDefinition</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QuickstartDefault</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">VPC definition name from the Mappings section of the template. Each definition specifies a VPC configuration, including the number of Availability Zones to be used for the deployment and the CIDR blocks for the VPC, public subnets, and private subnets. You can support multiple VPC configurations  by extending the map with additional definitions and choosing the appropriate name. If you don’t want to change the VPC configuration, keep the default setting. For more information, see the Adding VPC Definitions section.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC CIDR
+(<code>VPCCIDR</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR block for the VPC.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Private Subnet 1 ID
+(<code>PrivateSubnet1ID</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the private subnet 1 in Availability Zone 1 (e.g., subnet-a0246dcd)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Private Subnet 2 ID
+(<code>PrivateSubnet2ID</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the private subnet 2 in Availability Zone 2 (e.g., subnet-a0246dcd)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Public Subnet 1 ID
+(<code>PublicSubnet1ID</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the public subnet 1 in Availability Zone 1 (e.g., subnet-a0246dcd)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Public Subnet 2 ID
+(<code>PublicSubnet2ID</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the public subnet 2 in Availability Zone 2 (e.g., subnet-a0246dcd)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NAT 1 IP address
+(<code>NAT1ElasticIP</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elastic IP address for the first NAT gateway instance that will be allowed access to Amazon ES.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NAT 2 IP address
+(<code>NAT2ElasticIP</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elastic IP address for the second NAT gateway instance that will be allowed access to Amazon ES.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1458,13 +1493,13 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <td class="tableblock halign-left valign-top"><p class="tableblock">The CIDR IP range that is permitted to SSH into the bastion host instance and access Amazon ES. We recommend that you set this value to a trusted IP range. For example, you might want to grant only your corporate network access to the software. You can use <a href="http://checkip.amazonaws.com/" class="bare">http://checkip.amazonaws.com/</a>  to check your IP address. This parameter must be in the form x.x.x.x/x (e.g., 96.127.8.12/32, YOUR_IP/32).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ElasticsearchDomainName
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Domain Name
 (<code>ElasticsearchDomainName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-quickstart</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Domain Name. Must start with a lowercase letter and contain only letters, numbers, and -</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Node Type
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Instance Type
 (<code>ElasticsearchNodeType</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>r5.large.elasticsearch</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EC2 instance type for the Elasticsearch cluster.</p></td>
@@ -1553,7 +1588,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <td class="tableblock halign-left valign-top"><p class="tableblock">Determines whether the Redshift data is encrypted at rest</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift snapshot retention in days
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Snapshot Retention in Days
 (<code>RedshiftSnapshotRetention</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>1</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Retention period for Redshift snapshots in days. If set to 0, snapshots are disabled.</p></td>
@@ -1561,7 +1596,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. Kinesis Configuration</caption>
+<caption class="title">Table 5. Kinesis configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1673,7 +1708,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 </table>
 </div>
 <div class="sect2">
-<h3 id="_launch_into_an_existing_vpc">Launch into an existing VPC</h3>
+<h3 id="_launch_into_a_new_vpc">Launch into a new VPC</h3>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 8. Network Configuration</caption>
 <colgroup>
@@ -1690,52 +1725,16 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC ID
-(<code>VPCID</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Availability Zones
+(<code>AvailabilityZones</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ID of your existing VPC (e.g., vpc-0343606e).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of Availability Zones to use for the subnets in the VPC. You must specify two Availability Zones. By default, the Quick Start preserves the logical order you specify.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC CIDR
-(<code>VPCCIDR</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR block for the VPC.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Private Subnet 1 ID
-(<code>PrivateSubnet1ID</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the private subnet 1 in Availability Zone 1 (e.g., subnet-a0246dcd)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Private Subnet 2 ID
-(<code>PrivateSubnet2ID</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the private subnet 2 in Availability Zone 2 (e.g., subnet-a0246dcd)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Public Subnet 1 ID
-(<code>PublicSubnet1ID</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the public subnet 1 in Availability Zone 1 (e.g., subnet-a0246dcd)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Public Subnet 2 ID
-(<code>PublicSubnet2ID</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the public subnet 2 in Availability Zone 2 (e.g., subnet-a0246dcd)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NAT 1 IP address
-(<code>NAT1ElasticIP</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elastic IP address for the first NAT gateway instance that will be allowed access to Amazon ES.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NAT 2 IP address
-(<code>NAT2ElasticIP</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elastic IP address for the second NAT gateway instance that will be allowed access to Amazon ES.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VPC Definition
+(<code>VPCDefinition</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QuickstartDefault</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VPC definition name from the Mappings section of the template. Each definition specifies a VPC configuration, including the number of Availability Zones to be used for the deployment and the CIDR blocks for the VPC, public subnets, and private subnets. You can support multiple VPC configurations  by extending the map with additional definitions and choosing the appropriate name. If you don’t want to change the VPC configuration, keep the default setting. For more information, see the Adding VPC Definitions section.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1808,13 +1807,13 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <td class="tableblock halign-left valign-top"><p class="tableblock">The CIDR IP range that is permitted to SSH into the bastion host instance and access Amazon ES. We recommend that you set this value to a trusted IP range. For example, you might want to grant only your corporate network access to the software. You can use <a href="http://checkip.amazonaws.com/" class="bare">http://checkip.amazonaws.com/</a>  to check your IP address. This parameter must be in the form x.x.x.x/x (e.g., 96.127.8.12/32, YOUR_IP/32).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Domain Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">ElasticsearchDomainName
 (<code>ElasticsearchDomainName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-quickstart</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Domain Name. Must start with a lowercase letter and contain only letters, numbers, and -</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Instance Type
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Node Type
 (<code>ElasticsearchNodeType</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>r5.large.elasticsearch</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EC2 instance type for the Elasticsearch cluster.</p></td>
@@ -1903,7 +1902,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <td class="tableblock halign-left valign-top"><p class="tableblock">Determines whether the Redshift data is encrypted at rest</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Snapshot Retention in Days
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift snapshot retention in days
 (<code>RedshiftSnapshotRetention</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>1</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Retention period for Redshift snapshots in days. If set to 0, snapshots are disabled.</p></td>
@@ -1911,7 +1910,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. Kinesis configuration</caption>
+<caption class="title">Table 12. Kinesis Configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2289,7 +2288,7 @@ and to share your customizations with others.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-08-04 20:43:40 UTC
+Last updated 2020-08-05 23:56:03 UTC
 </div>
 </div>
 </body>
