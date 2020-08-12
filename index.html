@@ -816,7 +816,7 @@ table p {
 </div>
 <div class="paragraph text-center">
 <p><strong>August, 2020</strong><br>
-<em>Dave May, AWS Quick Start Team</em></p>
+<em>Dave May, AWS Quick Start team</em></p>
 </div>
 <div class="admonitionblock tip text-left">
 <table>
@@ -862,7 +862,7 @@ collaborated with AWS on the content of the Quick Start.
 <h2 id="_data_lake_foundation_on_aws">Data Lake Foundation on AWS</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A data lake is a repository that holds a large amount of raw data in its native (structured or unstructured) format until the data is needed. Storing data in its native format enables you to accommodate any future schema requirements or design changes.</p>
+<p>A data lake is a repository that holds a large amount of raw data in its native (structured or unstructured) format until the data is needed. Storing data in its native format lets you accommodate any future schema requirements or design changes.</p>
 </div>
 <div class="paragraph">
 <p>Increasingly, customer data sources are dispersed among on-premises data centers, software-as-a-service (SaaS) providers, APN Partners, third-party data providers, and public datasets. Building a data lake on AWS offers a foundation for storing on-premises, third-party, public datasets at low prices and high performance. A portfolio of descriptive, predictive, and real-time agile analytics built on this foundation can help answer important business aspects, such as predicting customer churn and propensity to buy, detecting fraud, optimizing industrial processes, and content recommendations.</p>
@@ -888,10 +888,10 @@ collaborated with AWS on the content of the Quick Start.
 <p>Data transformation, aggregation, and analysis through Amazon Athena, Amazon Redshift Spectrum, and AWS Glue.</p>
 </li>
 <li>
-<p>Building and deploying machine learning models with Amazon SageMaker.</p>
+<p>Building and deploying machine learning models using Amazon SageMaker.</p>
 </li>
 <li>
-<p>Search, by indexing metadata in Amazon ES and exposing it through Kibana dashboards.</p>
+<p>Search by indexing metadata in Amazon ES and displaying it on Kibana dashboards.</p>
 </li>
 <li>
 <p>Publishing into an S3 bucket for use by visualization tools.</p>
@@ -902,7 +902,7 @@ collaborated with AWS on the content of the Quick Start.
 </ul>
 </div>
 <div class="paragraph">
-<p>The usage model diagram in the following figure illustrates key actors and use cases that the data lake enables, in context with the key component areas that comprise the data lake. This Quick Start provisions foundational data lake capabilities and optionally demonstrates key use cases for each type of actor in the usage model.</p>
+<p>The usage model diagram in the following figure illustrates key actors and use cases that data lake enables, in the context of key component areas that comprise the data lake. This Quick Start provisions foundational data lake capabilities and optionally demonstrates key use cases for each type of actor in the usage model.</p>
 </div>
 <div id="architecture3" class="imageblock">
 <div class="content">
@@ -911,13 +911,13 @@ collaborated with AWS on the content of the Quick Start.
 <div class="title">Figure 1. Usage model for Data Lake Foundation Quick Start</div>
 </div>
 <div class="paragraph">
-<p>The following figure illustrates the foundational solution components of the data lake and how they relate to the usage model. The solution components interact through recurring and repeatable data lake patterns using your data and business flow.</p>
+<p>The following figure illustrates the foundational components of the data lake and how they relate to the usage model. Using your data and business flow, the components interact through recurring and repeatable data lake patterns.</p>
 </div>
 <div id="architecture4" class="imageblock">
 <div class="content">
 <a class="image" href="images/image4.png"><img src="images/image4.png" alt="Architecture4" width="648" height="439"></a>
 </div>
-<div class="title">Figure 2. Capabilities and solution components in the Data Lake foundation Quick Start</div>
+<div class="title">Figure 2. Capabilities and components in the Data Lake foundation Quick Start</div>
 </div>
 </div>
 </div>
@@ -933,7 +933,7 @@ using the Quick Start.</p>
 <p>The AWS CloudFormation template for this Quick Start includes
 configuration parameters that you can customize. Some of the settings,
 such as the instance type, affect the cost of deployment. For cost estimates,
-see the pricing pages for each AWS service you will use. Prices are subject to change.</p>
+see the pricing pages for each AWS service you use. Prices are subject to change.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -942,7 +942,7 @@ see the pricing pages for each AWS service you will use. Prices are subject to c
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-After you deploy the Quick Start, enable the <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-gettingstarted-turnonreports.html" target="_blank" rel="noopener">AWS Cost and Usage Report</a> to deliver billing metrics to an Amazon Simple Storage Service (Amazon S3) bucket in your account. It provides cost estimates based on usage throughout each month and finalizes the data at the end of the month. For more information about the report, see the <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage.html" target="_blank" rel="noopener">AWS documentation</a>.
+After you deploy the Quick Start, enable the <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-gettingstarted-turnonreports.html" target="_blank" rel="noopener">AWS Cost and Usage Report</a> to deliver billing metrics to an Amazon Simple Storage Service (Amazon S3) bucket in your account. It provides cost estimates based on usage throughout each month and aggregates the data at the end of the month. For more information about the report, see the <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage.html" target="_blank" rel="noopener">AWS documentation</a>.
 </td>
 </tr>
 </table>
@@ -953,9 +953,13 @@ After you deploy the Quick Start, enable the <a href="https://docs.aws.amazon.co
 <h2 id="_software_licenses">Software licenses</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You are responsible for the cost of the AWS services used while running this Quick Start reference deployment. There is no additional cost for using the Quick Start.
-The AWS CloudFormation template for this Quick Start includes configuration parameters that you can customize. Some of these settings, such as instance type, affect the cost of deployment. For cost estimates, see the pricing pages for each AWS service you use. Prices are subject to change.
-Because this Quick Start uses AWS-native solution components, there are no costs or license requirements beyond AWS infrastructure costs. This Quick Start also deploys Kibana, which is an open-source tool that’s included with Amazon ES.</p>
+<p>You are responsible for the cost of the AWS services used while running this Quick Start reference deployment. There is no additional cost for using the Quick Start.</p>
+</div>
+<div class="paragraph">
+<p>The AWS CloudFormation template for this Quick Start includes configuration parameters that you can customize. Some of these settings, such as instance type, affect the cost of deployment. For cost estimates, see the pricing pages for each AWS service you use. Prices are subject to change.</p>
+</div>
+<div class="paragraph">
+<p>Because this Quick Start uses AWS-native solution components, there are no costs or license requirements beyond AWS infrastructure costs. This Quick Start also deploys Kibana, which is an open-source tool that’s included with Amazon ES.</p>
 </div>
 </div>
 </div>
@@ -964,8 +968,7 @@ Because this Quick Start uses AWS-native solution components, there are no costs
 <div class="sectionbody">
 <div class="paragraph">
 <p>Deploying this Quick Start for a new virtual private cloud (VPC) with
-<strong>default parameters</strong> builds the following <em>Data Lake Foundation</em> environment in the
-AWS Cloud.</p>
+default parameters builds the following <em>Data Lake Foundation</em> environment in the AWS Cloud.</p>
 </div>
 <div id="architecture1" class="imageblock">
 <div class="content">
@@ -974,10 +977,7 @@ AWS Cloud.</p>
 <div class="title">Figure 3. Quick Start architecture for <em>Data Lake Foundation</em> on AWS</div>
 </div>
 <div class="paragraph">
-<p>As shown in Figure 1, the Quick Start sets up the following:</p>
-</div>
-<div class="paragraph">
-<p>The Quick Start sets up the following:</p>
+<p>As shown in figure 1, the Quick Start sets up the following:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -988,28 +988,47 @@ AWS Cloud.</p>
 <p>An internet gateway to allow access to the internet.*</p>
 </li>
 <li>
-<p>In the public subnets, managed NAT gateways to allow outbound internet access for resources in the private subnets.*</p>
+<p>In the public subnets:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Managed network address translation (NAT) gateways to allow outbound internet access for resources in the private subnets.*</p>
 </li>
 <li>
-<p>In the public subnets, Linux bastion hosts in an Auto Scaling group to allow inbound Secure Shell (SSH) access to EC2 instances in public and private subnets.*</p>
+<p>Linux bastion hosts in an Auto Scaling group to allow inbound Secure Shell (SSH) access to Amazon Elastic Compute Cloud (Amazon EC2) instances in public and private subnets.*</p>
 </li>
 <li>
-<p>IAM roles to provide permissions to access AWS resources; for example, to permit Amazon Redshift and Amazon Athena to read and write curated datasets.</p>
+<p>Amazon Redshift and Redshift Spectrum for data aggregation, analysis, transformation, and creation of curated and published datasets.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p>In the private subnets, Amazon Redshift for data aggregation, analysis, transformation, and creation of curated and published datasets.</p>
+<p>In the private subnets:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>An Amazon S3 endpoint.</p>
+</li>
+<li>
+<p>The Data Lake wizard.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>AWS Identity and Access Management (IAM) roles to provide permissions to access AWS resources (for example, to permit Amazon Redshift and Amazon Athena to read and write curated datasets).</p>
 </li>
 <li>
 <p>An Amazon SageMaker instance, which you can access by using AWS authentication.</p>
 </li>
 <li>
-<p>Integration with other Amazon services such as Amazon S3, Amazon Athena, AWS Glue, AWS Lambda, Amazon ES with Kibana, Amazon Kinesis, and Amazon QuickSight.</p>
-</li>
-<li>
-<p>Your choice to create a new VPC or deploy the data lake components into your existing VPC on AWS.
-\* The template that deploys the Quick Start into an existing VPC skips the components marked by asterisks and prompts you for your existing VPC configuration.</p>
+<p>Integration with other Amazon services, such as Amazon S3, Amazon Athena, AWS Glue, AWS Lambda, Amazon ES with Kibana, Amazon Kinesis, and Amazon QuickSight.</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>* The template that deploys the Quick Start into an existing VPC skips the components marked by asterisks and prompts you for your existing VPC configuration.</p>
 </div>
 <div class="paragraph">
 <p>The following figure shows how these components work together in a typical end-to-end process flow.</p>
@@ -1089,7 +1108,7 @@ Cloud.</p>
 <div class="sect2">
 <h3 id="_technical_requirements">Technical requirements</h3>
 <div class="paragraph">
-<p>Before you launch the Quick Start, your account must be configured as specified below. Otherwise, deployment might fail.</p>
+<p>Before you launch the Quick Start, your account must be configured as specified in the following table. Otherwise, deployment might fail.</p>
 </div>
 <div class="sect3">
 <h4 id="_resource_limits">Resource limits</h4>
@@ -1263,10 +1282,10 @@ Certain regions are available on an opt-in basis. Refer to the AWS Documentation
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Sign in to your AWS account at <a href="https://aws.amazon.com" class="bare">https://aws.amazon.com</a> with an IAM user role that has the necessary permissions. For details, see <a href="#_planning_the_deployment">Planning the deployment</a> earlier in this guide.</p>
+<p>Sign in to your AWS account at <a href="https://aws.amazon.com" class="bare">https://aws.amazon.com</a> with an IAM user role that has the necessary permissions. For details, see <a href="#_planning_the_deployment">Planning the deployment</a>, earlier in this guide.</p>
 </li>
 <li>
-<p>Make sure that your AWS account is configured correctly, as discussed in the <a href="#_technical_requirements">Technical requirements</a> section.</p>
+<p>Ensure that your AWS account is configured correctly, as discussed in the <a href="#_technical_requirements">Technical requirements</a> section.</p>
 </li>
 </ol>
 </div>
@@ -1280,7 +1299,7 @@ Certain regions are available on an opt-in basis. Refer to the AWS Documentation
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-You are responsible for the cost of the AWS services used while running this Quick Start reference deployment. There is no additional cost for using this Quick Start. For full details, see the pricing pages for each AWS service used by this Quick Start. Prices are subject to change.
+You are responsible for the cost of the AWS services used while running this Quick Start reference deployment. There is no additional cost for using this Quick Start. For full details, see the pricing pages for each AWS service you use. Prices are subject to change.
 </td>
 </tr>
 </table>
@@ -1288,7 +1307,7 @@ You are responsible for the cost of the AWS services used while running this Qui
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Sign in to your AWS account, and choose one of the following options to launch the AWS CloudFormation template. For help with choosing an option, see <a href="#_deployment_options">deployment options</a> earlier in this guide.</p>
+<p>Sign in to your AWS account, and choose one of the following options to launch the AWS CloudFormation template. For help with choosing an option, see <a href="#_deployment_options">deployment options</a>, earlier in this guide.</p>
 </li>
 </ol>
 </div>
@@ -1312,13 +1331,13 @@ You are responsible for the cost of the AWS services used while running this Qui
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-If you’re deploying Data Lake Foundation into an existing VPC, make sure that your VPC has two private subnets in different Availability Zones for the workload instances, and that the subnets aren’t shared. This Quick Start doesn’t support <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html" target="_blank" rel="noopener">shared subnets</a>. These subnets require <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html" target="_blank" rel="noopener">NAT gateways</a> in their route tables, to allow the instances to download packages and software without exposing them to the internet.
+If you’re deploying Data Lake Foundation into an existing VPC, ensure that your VPC has two private subnets in different Availability Zones for the workload instances and that the subnets aren’t shared. This Quick Start doesn’t support <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html" target="_blank" rel="noopener">shared subnets</a>. To allow instances to download packages and software without exposing them to the internet, the subnets require <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html" target="_blank" rel="noopener">NAT gateways</a> in their route tables.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Also, make sure that the domain name option in the DHCP options is configured as explained in the <a href="http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_DHCP_Options.html" target="_blank" rel="noopener">Amazon VPC documentation</a>. You provide your VPC settings when you launch the Quick Start.</p>
+<p>Also, ensure that the domain name in the DHCP options is configured, as explained in the <a href="http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_DHCP_Options.html" target="_blank" rel="noopener">Amazon VPC documentation</a>. Provide your VPC settings when you launch the Quick Start.</p>
 </div>
 <div class="paragraph">
 <p>Each deployment takes about 30 minutes to complete.</p>
@@ -1326,7 +1345,7 @@ If you’re deploying Data Lake Foundation into an existing VPC, make sure that 
 <div class="olist arabic">
 <ol class="arabic" start="2">
 <li>
-<p>Check the AWS Region that’s displayed in the upper-right corner of the navigation bar, and change it if necessary. This is where the network infrastructure for Data Lake Foundation will be built. The template is launched in the us-east-1 Region by default.</p>
+<p>Check the AWS Region that’s displayed in the upper-right corner of the navigation bar, and change it if necessary. This is where the network infrastructure for Data Lake Foundation is built. The template is launched in the us-east-1 Region by default.</p>
 </li>
 </ol>
 </div>
@@ -1336,7 +1355,7 @@ If you’re deploying Data Lake Foundation into an existing VPC, make sure that 
 <p>On the <strong>Create stack</strong> page, keep the default setting for the template URL, and then choose <strong>Next</strong>.</p>
 </li>
 <li>
-<p>On the <strong>Specify stack details</strong> page, change the stack name if needed. Review the parameters for the template. Provide values for the parameters that require input. For all other parameters, review the default settings and customize them as necessary.</p>
+<p>On the <strong>Specify stack details</strong> page, change the stack name, if needed, and review the parameters for the template. Provide values for the parameters that require input. For all other parameters, review the default settings, and customize them as necessary.</p>
 </li>
 </ol>
 </div>
@@ -1350,8 +1369,8 @@ If you’re deploying Data Lake Foundation into an existing VPC, make sure that 
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-We recommend keeping the default settings for the three parameters labled 'Quick Start S3 bucket name', 'Quick Start S3 bucket
-Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick Start templates for your own deployment projects. Changing these parameter settings automatically updates code references to point to a new Quick Start location. For additional details, see the <a href="https://aws-quickstart.github.io/option1.html" target="_blank" rel="noopener">AWS Quick Start Contributor’s Guide</a>.
+Unless you are customizing the Quick Start templates for your own deployment projects, we recommend that you keep the default settings for the parameters labeled <code>Quick Start S3 bucket name</code>, <code>Quick Start S3 bucket
+Region</code>, and <code>Quick Start S3 key prefix</code>. Changing these parameter settings automatically updates code references to point to a new Quick Start location. For more information, see the <a href="https://aws-quickstart.github.io/option1.html" target="_blank" rel="noopener">AWS Quick Start Contributor’s Guide</a>.
 </td>
 </tr>
 </table>
@@ -1360,7 +1379,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <div class="sect2">
 <h3 id="_launch_into_an_existing_vpc">Launch into an existing VPC</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Network Configuration</caption>
+<caption class="title">Table 1. Network configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1369,7 +1388,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1377,55 +1396,55 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC ID
 (<code>VPCID</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ID of your existing VPC (e.g., vpc-0343606e).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC CIDR
 (<code>VPCCIDR</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CIDR block for the VPC.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Private Subnet 1 ID
+<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC private subnet 1 ID
 (<code>PrivateSubnet1ID</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the private subnet 1 in Availability Zone 1 (e.g., subnet-a0246dcd)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the private subnet 1, located in Availability Zone 1 (e.g., subnet-a0246dcd).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Private Subnet 2 ID
+<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC private subnet 2 ID
 (<code>PrivateSubnet2ID</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the private subnet 2 in Availability Zone 2 (e.g., subnet-a0246dcd)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the private subnet 2, located in Availability Zone 2 (e.g., subnet-a0246dcd).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Public Subnet 1 ID
+<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC public subnet 1 ID
 (<code>PublicSubnet1ID</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the public subnet 1 in Availability Zone 1 (e.g., subnet-a0246dcd)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the public subnet 1, located in Availability Zone 1 (e.g., subnet-a0246dcd).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC Public Subnet 2 ID
+<td class="tableblock halign-left valign-top"><p class="tableblock">Existing VPC public subnet 2 ID
 (<code>PublicSubnet2ID</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the public subnet 2 in Availability Zone 2 (e.g., subnet-a0246dcd)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the public subnet 2, located in Availability Zone 2 (e.g., subnet-a0246dcd).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NAT 1 IP address
 (<code>NAT1ElasticIP</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elastic IP address for the first NAT gateway instance that will be allowed access to Amazon ES.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elastic IP address for the first NAT gateway instance that is allowed access to Amazon ES.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NAT 2 IP address
 (<code>NAT2ElasticIP</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elastic IP address for the second NAT gateway instance that will be allowed access to Amazon ES.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elastic IP address for the second NAT gateway instance that is allowed access to Amazon ES.</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. S3 Bucket Configuration</caption>
+<caption class="title">Table 2. S3 bucket configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1434,45 +1453,45 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Submissions Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submissions bucket name
 (<code>SubmissionsBucketName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-submissions</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the S3 submission bucket. A random string will be appended to ensure uniqueness.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the S3 submission bucket. A random string is appended to ensure uniqueness.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Curated Datasets Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Curated Datasets bucket name
 (<code>CuratedDatasetsName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-curated-datasets</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the S3 curated datasets bucket. A random string will be appended to ensure uniqueness.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the S3 curated datasets bucket. A random string is appended to ensure uniqueness.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Published Data Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Published Data bucket name
 (<code>PublishedDataName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-published-data</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the S3 published data bucket. A random string will be appended to ensure uniqueness.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the S3 published data bucket. A random string is appended to ensure uniqueness.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regional Lambda Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regional Lambda bucket name
 (<code>RegionalLambdaBucketName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>regional-lambda-bucket</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the S3 regional lambda bucket. A random string will be appended to ensure uniqueness.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the S3 Regional lambda bucket. A random string is appended to ensure uniqueness.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Athena Query Results Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Athena query results bucket name
 (<code>AthenaQueryResultsBucketName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-athena-query-results</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the S3 Athena query results bucket. A random string will be appended to ensure uniqueness.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the S3 Athena query results bucket. A random string is appended to ensure uniqueness.</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. Elasticsearch Configuration</caption>
+<caption class="title">Table 3. Elasticsearch configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1481,45 +1500,45 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Remote Access CIDR
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remote access CIDR
 (<code>RemoteAccessCIDR</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The CIDR IP range that is permitted to SSH into the bastion host instance and access Amazon ES. We recommend that you set this value to a trusted IP range. For example, you might want to grant only your corporate network access to the software. You can use <a href="http://checkip.amazonaws.com/" class="bare">http://checkip.amazonaws.com/</a>  to check your IP address. This parameter must be in the form x.x.x.x/x (e.g., 96.127.8.12/32, YOUR_IP/32).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR IP range that is permitted to connect through SSH into the bastion host instance and access Amazon ES. We recommend that you set this value to a trusted IP range (e.g., you might grant software access to only your corporate network). You can use <a href="http://checkip.amazonaws.com/" class="bare">http://checkip.amazonaws.com/</a> to check your IP address. This parameter must be in the form x.x.x.x/x (e.g., 96.127.8.12/32, YOUR_IP/32).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Domain Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch domain name
 (<code>ElasticsearchDomainName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-quickstart</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Domain Name. Must start with a lowercase letter and contain only letters, numbers, and -</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch domain name. Must start with a lowercase letter and contain only letters, numbers, and hyphens (-).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Instance Type
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch instance type
 (<code>ElasticsearchNodeType</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>r5.large.elasticsearch</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EC2 instance type for the Elasticsearch cluster.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Node Count
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch node count
 (<code>ElasticsearchNodeCount</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>1</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The number of nodes in the Elasticsearch cluster. For guidance, see the Amazon ES documentation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of nodes in the Elasticsearch cluster. For guidance, see the Amazon ES documentation.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch EBS Volume Type
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch EBS volume type
 (<code>ElasticsearchEBSVolumeType</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>gp2</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">EBS Volume Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EBS volume type.</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 4. Redshift Configuration</caption>
+<caption class="title">Table 4. Redshift configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1528,7 +1547,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1537,61 +1556,61 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <td class="tableblock halign-left valign-top"><p class="tableblock">Enable Redshift
 (<code>EnableRedshift</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>yes</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether Amazon Redshift will be provisioned  Set to no if you don’t want to provision the Amazon Redshift cluster.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether Amazon Redshift is provisioned.  Set to no if you don’t want to provision the Amazon Redshift cluster.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Make Redshift publicly accessible
 (<code>MakeRedshiftPubliclyAccessible</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>yes</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether Amazon Redshift will be publicly accessible. Only applies if EnableRedshift is set to yes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether Amazon Redshift is publicly accessible. This only applies if EnableRedshift is set to yes.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift User Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift user name
 (<code>RedshiftUsername</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The user name that is associated with the master user account for the Amazon Redshift cluster. The user name must contain fewer than 128 alphanumeric characters or underscores, and must be lowercase and begin with a letter.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User name that is associated with the master user account for the Amazon Redshift cluster. The user name must contain fewer than 128 alphanumeric characters or underscores, be lowercase, and begin with a letter.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Password
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift password
 (<code>RedshiftPassword</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The password that is associated with the master user account for the Amazon Redshift cluster. The password must contain 8 to 64 printable ASCII characters, excluding: /, ", \', \ and @. It must contain one uppercase letter, one lowercase letter, and one number.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Password that is associated with the master user account for the Amazon Redshift cluster. The password must contain 8–64 printable ASCII characters, excluding: /, ", \', \ and @. It must contain one uppercase letter, one lowercase letter, and one number.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Number of Nodes
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift number of nodes
 (<code>RedshiftNumberOfNodes</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>1</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The number of nodes in the Amazon Redshift cluster. If you specify a number that’s larger than 1, the Quick Start will launch a multi-node cluster.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of nodes in the Amazon Redshift cluster. If you specify a number that’s greater than 1, the Quick Start launches a multinode cluster.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Node Type
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift node type
 (<code>RedshiftNodeType</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>dc2.large</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Instance type for the nodes in the Amazon Redshift cluster.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Database Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift database name
 (<code>RedshiftDatabaseName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>quickstart</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the first database to be created when the Amazon Redshift cluster is provisioned.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the first database to create when the Amazon Redshift cluster is provisioned.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Database Port
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift database port
 (<code>RedshiftDatabasePort</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>5439</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The port that Amazon Redshift will listen on, which will be allowed through the security group.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Port that Amazon Redshift listens on, which is allowed through the security group.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Data Encrypted
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift data encrypted
 (<code>RedshiftEncrypted</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Determines whether the Redshift data is encrypted at rest</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Determines whether the Redshift data is encrypted at rest.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Snapshot Retention in Days
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Ssnapshot retention (in Days)
 (<code>RedshiftSnapshotRetention</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>1</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Retention period for Redshift snapshots in days. If set to 0, snapshots are disabled.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Retention period for Redshift snapshots (in days). If this is set to 0, snapshots are disabled.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1605,39 +1624,39 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream name
 (<code>KinesisDataStreamName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>streaming-submissions</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the Kinesis data stream.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the Kinesis Data Stream.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream S3 Prefix
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream S3 prefix
 (<code>KinesisDataStreamS3Prefix</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>streaming-submissions</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S3 key prefix for your streaming data stored in the S3 submissions bucket. This prefix can include numbers, lowercase letters, uppercase letters, hyphens, and forward slashes, but should not start with a forward slash, which is automatically added. Use this parameter to specify the location for the streaming data you’d like to load.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S3 key prefix for your streaming data that is stored in the S3 submissions bucket. This prefix can include numbers, lowercase letters, uppercase letters, hyphens (-), and forward slashes (/), but should not start with a forward slash, which is automatically added. Use this parameter to specify the location for the streaming data that you want to load.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis S3 Prefix for Error Objects
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis S3 prefix for error objects
 (<code>KinesisErrorOutputPrefix</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S3 prefix for error objects (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Optional) S3 prefix for error objects.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream S3 Compression Format
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream S3 compression format
 (<code>KinesisCompressionFormat</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>UNCOMPRESSED</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis stream S3 compression format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis stream S3 compression format.</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. SageMaker Configuration</caption>
+<caption class="title">Table 6. SageMaker configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1646,27 +1665,27 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Notebook Instance Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notebook instance name
 (<code>NotebookInstanceName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NotebookInstanceName</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the Amazon SageMaker Notebook instance.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the Amazon SageMaker notebook instance.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Notebook Instance Type
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notebook instance type
 (<code>NotebookInstanceType</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>ml.t3.large</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The EC2 instance type for the data lake Amazon SageMaker Notebook instance.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EC2 instance type for the data-lake Amazon SageMaker notebook instance.</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 7. AWS Quick Start Configuration</caption>
+<caption class="title">Table 7. AWS Quick Start configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1675,34 +1694,34 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 bucket name
 (<code>QSS3BucketName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>aws-quickstart</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S3 bucket where the Quick Start templates and scripts are installed. Use this parameter to specify the S3 bucket name you’ve created for your copy of Quick Start assets, if you decide to customize or extend the Quick Start for your own use. The bucket name can include numbers, lowercase letters, uppercase letters, and hyphens, but should not start or end with a hyphen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S3 bucket where the Quick Start templates and scripts are installed. If you decide to customize or extend the Quick Start for your own purposes, use this parameter to specify the S3 bucket name you created for your Quick Start assets. The bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-), but should not start or end with a hyphen.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 bucket region
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 bucket Region
 (<code>QSS3BucketRegion</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>us-east-1</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The AWS Region where the Quick Start S3 bucket (QSS3BucketName) is hosted. When using your own bucket, you must specify this value.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS Region where the Quick Start S3 bucket (QSS3BucketName) is hosted. If you use your own bucket, you must specify this value.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 Key Prefix
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 key prefix
 (<code>QSS3KeyPrefix</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>quickstart-datalake-foundation/</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S3 key prefix used to simulate a folder for your copy of Quick Start assets, if you decide to customize or extend the Quick Start for your own use. This prefix can include numbers, lowercase letters, uppercase letters, hyphens, and forward slashes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S3 key prefix used to simulate a folder for your copy of Quick Start assets. Specify a value if you decide to customize or extend the Quick Start for your own purposes. This prefix can include numbers, lowercase letters, uppercase letters, hyphens, and forward slashes.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Key Pair Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Key pair name
 (<code>KeyPairName</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Public/private key pairs allow you to securely connect to your instance after it launches</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Key pairs allow you to securely connect to your instance after it launches.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1710,7 +1729,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <div class="sect2">
 <h3 id="_launch_into_a_new_vpc">Launch into a new VPC</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 8. Network Configuration</caption>
+<caption class="title">Table 8. Network configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1719,7 +1738,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1727,19 +1746,19 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Availability Zones
 (<code>AvailabilityZones</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The list of Availability Zones to use for the subnets in the VPC. You must specify two Availability Zones. By default, the Quick Start preserves the logical order you specify.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of Availability Zones to use for the subnets in the VPC. You must specify two Availability Zones.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">VPC Definition
+<td class="tableblock halign-left valign-top"><p class="tableblock">VPC definition
 (<code>VPCDefinition</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>QuickstartDefault</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">VPC definition name from the Mappings section of the template. Each definition specifies a VPC configuration, including the number of Availability Zones to be used for the deployment and the CIDR blocks for the VPC, public subnets, and private subnets. You can support multiple VPC configurations  by extending the map with additional definitions and choosing the appropriate name. If you don’t want to change the VPC configuration, keep the default setting. For more information, see the Adding VPC Definitions section.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VPC definition name from the Mappings section of the template. Each definition specifies a VPC configuration, including the number of Availability Zones to be used for the deployment and the CIDR blocks for the VPC, public subnets, and private subnets. You can support multiple VPC configurations by extending the map with additional definitions and choosing the appropriate name. If you don’t want to change the VPC configuration, keep the default setting. For more information, see the Adding VPC Definitions section of the guide.</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 9. S3 Bucket Configuration</caption>
+<caption class="title">Table 9. S3 bucket configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1748,45 +1767,45 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Submissions Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submissions bucket name
 (<code>SubmissionsBucketName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-submissions</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the S3 submission bucket. A random string will be appended to ensure uniqueness.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the S3 submission bucket. A random string is appended to ensure uniqueness.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Curated Datasets Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Curated datasets bucket name
 (<code>CuratedDatasetsName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-curated-datasets</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the S3 curated datasets bucket. A random string will be appended to ensure uniqueness.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the S3 curated datasets bucket. A random string is appended to ensure uniqueness.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Published Data Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Published data bucket name
 (<code>PublishedDataName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-published-data</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the S3 published data bucket. A random string will be appended to ensure uniqueness.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the S3 published data bucket. A random string is appended to ensure uniqueness.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regional Lambda Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regional Lambda bucket name
 (<code>RegionalLambdaBucketName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>regional-lambda-bucket</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the S3 regional lambda bucket. A random string will be appended to ensure uniqueness.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the S3 Regional lambda bucket. A random string is appended to ensure uniqueness.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Athena Query Results Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Athena query results bucket name
 (<code>AthenaQueryResultsBucketName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-athena-query-results</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the S3 Athena query results bucket. A random string will be appended to ensure uniqueness.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the S3 Athena query results bucket. A random string is appended to ensure uniqueness.</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. Elasticsearch Configuration</caption>
+<caption class="title">Table 10. Elasticsearch configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1795,45 +1814,45 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Remote Access CIDR
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remote access CIDR
 (<code>RemoteAccessCIDR</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The CIDR IP range that is permitted to SSH into the bastion host instance and access Amazon ES. We recommend that you set this value to a trusted IP range. For example, you might want to grant only your corporate network access to the software. You can use <a href="http://checkip.amazonaws.com/" class="bare">http://checkip.amazonaws.com/</a>  to check your IP address. This parameter must be in the form x.x.x.x/x (e.g., 96.127.8.12/32, YOUR_IP/32).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR IP range that is permitted to connect through SSH into the bastion host instance and access Amazon ES. We recommend that you set this value to a trusted IP range (e.g., you might grant software access to only your corporate network). You can use <a href="http://checkip.amazonaws.com/" class="bare">http://checkip.amazonaws.com/</a>  to check your IP address. This parameter must be in the form x.x.x.x/x (e.g., 96.127.8.12/32, YOUR_IP/32).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ElasticsearchDomainName
 (<code>ElasticsearchDomainName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake-quickstart</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Domain Name. Must start with a lowercase letter and contain only letters, numbers, and -</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch domain name. This must start with a lowercase letter and contain only letters, numbers, and hyphens (-).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Node Type
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch node type
 (<code>ElasticsearchNodeType</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>r5.large.elasticsearch</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EC2 instance type for the Elasticsearch cluster.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch Node Count
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch node Count
 (<code>ElasticsearchNodeCount</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>1</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The number of nodes in the Elasticsearch cluster. For guidance, see the Amazon ES documentation.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch EBS Volume Type
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch EBS volume type
 (<code>ElasticsearchEBSVolumeType</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>gp2</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">EBS Volume Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EBS volume type.</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. Redshift Configuration</caption>
+<caption class="title">Table 11. Redshift configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1842,7 +1861,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -1851,66 +1870,66 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <td class="tableblock halign-left valign-top"><p class="tableblock">Enable Redshift
 (<code>EnableRedshift</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>yes</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether Amazon Redshift will be provisioned  Set to no if you don’t want to provision the Amazon Redshift cluster.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether Amazon Redshift is provisioned.  Set to no if you don’t want to provision the Amazon Redshift cluster.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Make Redshift publicly accessible
 (<code>MakeRedshiftPubliclyAccessible</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>yes</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether Amazon Redshift will be publicly accessible. Only applies if EnableRedshift is set to yes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether Amazon Redshift is publicly accessible. This only applies if EnableRedshift is set to yes.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift User Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift user name
 (<code>RedshiftUsername</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>datalake</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The user name that is associated with the master user account for the Amazon Redshift cluster. The user name must contain fewer than 128 alphanumeric characters or underscores, and must be lowercase and begin with a letter.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User name that is associated with the master user account for the Amazon Redshift cluster. The user name must contain fewer than 128 alphanumeric characters or underscores, and must be lowercase and begin with a letter.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Password
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift password
 (<code>RedshiftPassword</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The password that is associated with the master user account for the Amazon Redshift cluster. The password must contain 8 to 64 printable ASCII characters, excluding: /, ", \', \ and @. It must contain one uppercase letter, one lowercase letter, and one number.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Password that is associated with the master user account for the Amazon Redshift cluster. The password must contain 8–64 printable ASCII characters, excluding: /, ", \', \ and @. It must contain one uppercase letter, one lowercase letter, and one number.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Number of Nodes
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift number of nodes
 (<code>RedshiftNumberOfNodes</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>1</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The number of nodes in the Amazon Redshift cluster. If you specify a number that’s larger than 1, the Quick Start will launch a multi-node cluster.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of nodes in the Amazon Redshift cluster. If you specify a number that’s greater than 1, the Quick Start launches a multinode cluster.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Node Type
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift node type
 (<code>RedshiftNodeType</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>dc2.large</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Instance type for the nodes in the Amazon Redshift cluster.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Database Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift database name
 (<code>RedshiftDatabaseName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>quickstart</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the first database to be created when the Amazon Redshift cluster is provisioned.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the first database to create when provisioning the Amazon Redshift cluster.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Database Port
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift database port
 (<code>RedshiftDatabasePort</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>5439</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The port that Amazon Redshift will listen on, which will be allowed through the security group.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Port that Amazon Redshift listens on, which is allowed through the security group.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift Data Encrypted
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redshift data encrypted
 (<code>RedshiftEncrypted</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Determines whether the Redshift data is encrypted at rest</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Determines whether the Redshift data is encrypted at rest.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Redshift snapshot retention in days
 (<code>RedshiftSnapshotRetention</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>1</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Retention period for Redshift snapshots in days. If set to 0, snapshots are disabled.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Retention period for Redshift snapshots (in days). If it is set to 0, snapshots are disabled.</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. Kinesis Configuration</caption>
+<caption class="title">Table 12. Kinesis configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1919,39 +1938,39 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream name
 (<code>KinesisDataStreamName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>streaming-submissions</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the Kinesis data stream.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the Kinesis Data Stream.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream S3 Prefix
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream S3 prefix
 (<code>KinesisDataStreamS3Prefix</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>streaming-submissions</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S3 key prefix for your streaming data stored in the S3 submissions bucket. This prefix can include numbers, lowercase letters, uppercase letters, hyphens, and forward slashes, but should not start with a forward slash, which is automatically added. Use this parameter to specify the location for the streaming data you’d like to load.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S3 key prefix for streaming data that is stored in the S3 submissions bucket. This prefix can include numbers, lowercase letters, uppercase letters, hyphens (-), and forward slashes (/), but it should not start with a forward slash because they are automatically appended. Use this parameter to specify the location of the streaming data you want to load.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis S3 Prefix for Error Objects
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis S3 prefix for error objects
 (<code>KinesisErrorOutputPrefix</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S3 prefix for error objects (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Optional) S3 prefix for error objects.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream S3 Compression Format
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis Data Stream S3 compression format
 (<code>KinesisCompressionFormat</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>UNCOMPRESSED</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis stream S3 compression format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kinesis stream S3 compression format.</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 13. SageMaker Configuration</caption>
+<caption class="title">Table 13. SageMaker configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1960,27 +1979,27 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Notebook Instance Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notebook instance name
 (<code>NotebookInstanceName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NotebookInstanceName</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the Amazon SageMaker Notebook instance.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the Amazon SageMaker notebook instance.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Notebook Instance Type
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notebook instance type
 (<code>NotebookInstanceType</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>ml.t3.large</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The EC2 instance type for the data lake Amazon SageMaker Notebook instance.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EC2 instance type for the data-lake Amazon SageMaker notebook instance.</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 14. AWS Quick Start Configuration</caption>
+<caption class="title">Table 14. AWS Quick Start configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1989,34 +2008,34 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Parameter label (name)</th>
-<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Default value</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 Bucket Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 bucket name
 (<code>QSS3BucketName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>aws-quickstart</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S3 bucket where the Quick Start templates and scripts are installed. Use this parameter to specify the S3 bucket name you’ve created for your copy of Quick Start assets, if you decide to customize or extend the Quick Start for your own use. The bucket name can include numbers, lowercase letters, uppercase letters, and hyphens, but should not start or end with a hyphen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S3 bucket where the Quick Start templates and scripts are installed. If you decide to customize or extend the Quick Start for your own purposes, use this parameter to specify the S3 bucket name you created for your Quick Start assets. The bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-), but should not start or end with a hyphen.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 bucket region
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 bucket Region
 (<code>QSS3BucketRegion</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>us-east-1</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The AWS Region where the Quick Start S3 bucket (QSS3BucketName) is hosted. When using your own bucket, you must specify this value.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS Region where the Quick Start S3 bucket (QSS3BucketName) is hosted. If you use your own bucket, you must specify this value.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 Key Prefix
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Start S3 key prefix
 (<code>QSS3KeyPrefix</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>quickstart-datalake-foundation/</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S3 key prefix used to simulate a folder for your copy of Quick Start assets, if you decide to customize or extend the Quick Start for your own use. This prefix can include numbers, lowercase letters, uppercase letters, hyphens, and forward slashes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S3 key prefix used to simulate a folder for your copy of Quick Start assets. Specify a value if you decide to customize or extend the Quick Start for your own purposes. This prefix can include numbers, lowercase letters, uppercase letters, hyphens (-), and forward slashes (/).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Key Pair Name
+<td class="tableblock halign-left valign-top"><p class="tableblock">Key pair name
 (<code>KeyPairName</code>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires Input</em></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Public/private key pairs allow you to securely connect to your instance after it launches</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Key pairs allow you to securely connect to your instance after it launches.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2035,7 +2054,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <p>Monitor the status of the stack. When the status is <strong>CREATE_COMPLETE</strong>, the Data Lake Foundation deployment is ready.</p>
 </li>
 <li>
-<p>Use the values displayed in the <strong>Outputs</strong> tab for the stack, as shown in Figure 2, to view the resources that were created.</p>
+<p>Use the values displayed in the <strong>Outputs</strong> tab for the stack, as shown in figure 2, to view the created resources.</p>
 </li>
 </ol>
 </div>
@@ -2052,21 +2071,24 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <h2 id="_test_the_deployment">Test the deployment</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You should confirm the following:</p>
+<p>Confirm the following:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The S3 buckets listed on the Outputs tab for the stack are available in the Amazon S3 console. The Quick Start provisions distinct S3 buckets for submissions, curated datasets, and published results.</p>
+<p>The S3 buckets listed on the <strong>Outputs</strong> tab for the stack are available in the Amazon S3 console. The Quick Start provisions distinct S3 buckets for submissions, curated datasets, and published results.</p>
 </li>
 <li>
-<p>If you launched the Quick Start with Enable Redshift set to yes, Amazon Redshift is accessible at the Java Database Connectivity (JDBC) endpoint specified on the Outputs tab for the stack, using the Redshift User Name and Redshift Password that you specified when you launched the Quick Start.</p>
+<p>If you launched the Quick Start with <strong>Enable Redshift</strong> set to <strong>yes</strong>, Amazon Redshift is accessible from the Java Database Connectivity (JDBC) endpoint specified on the <strong>Outputs</strong> tab for the stack. For the user name and password, use the values that you specified when you launched the Quick Start.</p>
 </li>
 <li>
-<p>The Kinesis stream for streaming submissions listed on the Outputs tab for the stack is available in the Kinesis console.</p>
+<p>Kinesis streaming submissions on the stack&#8217;s <strong>Outputs</strong> tab is available in the Kinesis console.</p>
 </li>
 <li>
-<p>The Elasticsearch cluster listed on the Outputs tab for the stack is available in the Amazon ES console, and the Kibana endpoint listed on the Outputs tab is accessible from a web browser client within the Remote Access CIDR that you specified when launching the Quick Start.</p>
+<p>The Amazon Elasticsearch Service (Amazon ES) cluster listed on the <strong>Outputs</strong> tab for the stack is available in the Amazon ES console.</p>
+</li>
+<li>
+<p>The Kibana endpoint listed on the <strong>Outputs</strong> tab is accessible from a web-browser client within the remote-access CIDR that you specified when you launched the Quick Start.</p>
 </li>
 </ul>
 </div>
@@ -2076,24 +2098,24 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <h2 id="_optional_using_your_own_dataset">Optional: Using your own dataset</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The data lake foundation provides a solid base for your processes. Using this infrastructure, you can:</p>
+<p>The Data Lake Foundation provides a base for your processes. Use this infrastructure for the following:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Ingest batch submissions, resulting in curated datasets in Amazon S3. You can then use your own SQL scripts to load curated datasets to Amazon Redshift.</p>
+<p>Ingest batch submissions, which results in curated Amazon S3 datasets. You can then use your own SQL scripts to load curated datasets into Amazon Redshift.</p>
 </li>
 <li>
-<p>Ingest streaming submissions provided through Amazon Kinesis Data Firehose.</p>
+<p>Ingest streaming submissions from Amazon Kinesis Data Firehose.</p>
 </li>
 <li>
-<p>Auto-discover curated datasets using AWS Glue crawlers, and transform curated datasets with AWS Glue jobs.</p>
+<p>Auto-discover curated datasets using AWS Glue crawlers, and transform curated datasets using AWS Glue jobs.</p>
 </li>
 <li>
-<p>Analyze the data with Amazon Redshift, using your own SQL queries.</p>
+<p>Use your own SQL queries to analyze Amazon Redshift data.</p>
 </li>
 <li>
-<p>Analyze the data with Amazon Kinesis Data Analytics, by creating your own applications that read streaming data from Kinesis Data Firehose.</p>
+<p>Analyze your data with Amazon Kinesis Data Analytics by creating your own applications that read streaming data from Kinesis Data Firehose.</p>
 </li>
 <li>
 <p>Publish the results of analytics to the published datasets bucket.</p>
@@ -2102,7 +2124,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <p>Get a high-level picture of your data lake by using Amazon ES, which indexes the metadata of S3 objects.</p>
 </li>
 <li>
-<p>Use Amazon Athena to run ad hoc analytics over your curated datasets, and Amazon QuickSight to visualize the datasets in the published datasets bucket. You can also use Amazon Athena or Amazon Redshift as data sources in Amazon QuickSight.</p>
+<p>Use Amazon Athena to run ad hoc analytics on your curated datasets and Amazon QuickSight to visualize the datasets in the published datasets bucket. You can also use Amazon Athena or Amazon Redshift as data sources for Amazon QuickSight.</p>
 </li>
 </ul>
 </div>
@@ -2118,10 +2140,10 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <h2 id="_optional_adding_vpc_definitions">Optional: Adding VPC definitions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When you launch the Quick Start in the mode where a new VPC is created, the Quick Start uses VPC parameters that are defined in a mapping within the Quick Start templates. If you choose to download the templates from the GitHub repository, you can add new named VPC definitions to the mapping, and choose one of these named VPC definitions when you launch the Quick Start.</p>
+<p>When you launch the deployment option that creates a new VPC, the Quick Start uses VPC parameters that are mapped within the AWS CloudFormation templates. If download the templates from the GitHub repository, you can add new VPC definitions to the mapping and choose one of the named VPC definitions when you launch the Quick Start.</p>
 </div>
 <div class="paragraph">
-<p>The following table shows the parameters within each VPC definition. You can create as many VPC definitions as you need within your environments. When you deploy the Quick Start, use the VPC Definition parameter to specify the configuration you want to use.</p>
+<p>The following table shows the parameters within each VPC definition. You can create as many VPC definitions as you need within your environments. When you deploy the Quick Start, use the VPC <strong>Definition</strong> parameter to specify the configuration you want to use.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2143,24 +2165,24 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <td class="tableblock halign-left valign-top"><p class="tableblock">Number of Availability Zones to use in the VPC.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">PublicSubnet1CIDR</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10.0.1.0/24</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR block for the public (DMZ) subnet 1 located in Availability Zone 1.</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PrivateSubnet1CIDR</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">10.0.2.0/24</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR block for private subnet 1 located in Availability Zone 1.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">PublicSubnet2CIDR</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10.0.3.0/24</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR block for the public (DMZ) subnet 2 located in Availability Zone 2.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR block for private subnet 1, located in Availability Zone 1.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PrivateSubnet2CIDR</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">10.0.4.0/24</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR block for private subnet 2 located in Availability Zone 2.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR block for private subnet 2, located in Availability Zone 2.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PublicSubnet2CIDR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10.0.3.0/24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR block for the public (DMZ) subnet 2, located in Availability Zone 2.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PublicSubnet1CIDR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10.0.1.0/24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CIDR block for the public (DMZ) subnet 1, located in Availability Zone 1.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VPCCIDR</p></td>
@@ -2175,10 +2197,11 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <h2 id="_faq">FAQ</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Q.</strong> I encountered a <strong>CREATE_FAILED</strong> error when I launched the Quick Start.</p>
+<p>D
+<strong>Q.</strong> I encountered a <strong>CREATE_FAILED</strong> error when I launched the Quick Start.</p>
 </div>
 <div class="paragraph">
-<p><strong>A.</strong> If AWS CloudFormation fails to create the stack, we recommend that you relaunch the template with <strong>Rollback on failure</strong> set to <strong>No</strong>. (This setting is under <strong>Advanced</strong> in the AWS CloudFormation console, <strong>Options</strong> page.) With this setting, the stack’s state is retained and the instance is left running, so you can troubleshoot the issue. (For Windows, look at the log files in %ProgramFiles%\Amazon\EC2ConfigService and C:\cfn\log.)</p>
+<p><strong>A.</strong> If AWS CloudFormation fails to create the stack, we recommend that you relaunch the template with <strong>Rollback on failure</strong> set to <strong>Disabled</strong>. (This setting is under <strong>Advanced</strong> in the AWS CloudFormation console, <strong>Options</strong> page.) With this setting, the stack’s state is retained, and the instance remains running so you can troubleshoot the issue. (For Windows, look at the log files in <code>%ProgramFiles%\Amazon\EC2ConfigService</code> and <code>C:\cfn\log</code>.)</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -2187,7 +2210,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-When you set <strong>Rollback on failure</strong> to <strong>Disabled</strong>, you continue to incur AWS charges for this stack. Please make sure to delete the stack when you finish troubleshooting.
+When you set <strong>Rollback on failure</strong> to <strong>Disabled</strong>, you continue to incur AWS charges for the stack. Ensure to delete the stack when you finish troubleshooting.
 </td>
 </tr>
 </table>
@@ -2212,37 +2235,6 @@ When you set <strong>Rollback on failure</strong> to <strong>Disabled</strong>, 
 </div>
 <div class="paragraph">
 <p><strong>A.</strong> Yes, you can.</p>
-</div>
-<div class="paragraph">
-<p>The data lake foundation provides a solid base for your processes. Using this infrastructure, you can:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Ingest batch submissions, resulting in curated datasets in Amazon S3. You can then use your own SQL scripts to load curated datasets to Amazon Redshift.</p>
-</li>
-<li>
-<p>Ingest streaming submissions provided through Amazon Kinesis Data Firehose.</p>
-</li>
-<li>
-<p>Auto-discover curated datasets using AWS Glue crawlers, and transform curated datasets with AWS Glue jobs.</p>
-</li>
-<li>
-<p>Analyze the data with Amazon Redshift, using your own SQL queries.</p>
-</li>
-<li>
-<p>Analyze the data with Amazon Kinesis Data Analytics, by creating your own applications that read streaming data from Kinesis Data Firehose.</p>
-</li>
-<li>
-<p>Publish the results of analytics to the published datasets bucket.</p>
-</li>
-<li>
-<p>Get a high-level picture of your data lake by using Amazon ES, which indexes the metadata of S3 objects.</p>
-</li>
-<li>
-<p>Use Amazon Athena to run ad hoc analytics over your curated datasets, and Amazon QuickSight to visualize the datasets in the published datasets bucket. You can also use Amazon Athena or Amazon Redshift as data sources in Amazon QuickSight.</p>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -2272,15 +2264,15 @@ and to share your customizations with others.</p>
 </div>
 <hr>
 <div class="paragraph">
-<p>© 2020, Amazon Web Services, Inc. or its affiliates, and {partner-company-name}. All rights reserved.</p>
+<p>© 2020, Amazon Web Services Inc., or its affiliates, and {partner-company-name}. All rights reserved.</p>
 </div>
 <div class="sect3">
 <h4 id="_notices">Notices</h4>
 <div class="paragraph">
-<p>This document is provided for informational purposes only. It represents AWS’s current product offerings and practices as of the date of issue of this document, which are subject to change without notice. Customers are responsible for making their own independent assessment of the information in this document and any use of AWS’s products or services, each of which is provided “as is” without warranty of any kind, whether express or implied. This document does not create any warranties, representations, contractual commitments, conditions or assurances from AWS, its affiliates, suppliers or licensors. The responsibilities and liabilities of AWS to its customers are controlled by AWS agreements, and this document is not part of, nor does it modify, any agreement between AWS and its customers.</p>
+<p>This document is provided for informational purposes only. It represents AWS’s current product offerings and practices as of the date of issue of this document, which are subject to change without notice. Customers are responsible for making their own independent assessment of the information in this document and any use of AWS’s products or services, each of which is provided “as is” without warranty of any kind, whether expressed or implied. This document does not create any warranties, representations, contractual commitments, conditions, or assurances from AWS, its affiliates, suppliers, or licensors. The responsibilities and liabilities of AWS to its customers are controlled by AWS agreements, and this document is not part of, nor does it modify, any agreement between AWS and its customers.</p>
 </div>
 <div class="paragraph">
-<p>The software included with this paper is licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at <a href="http://aws.amazon.com/apache2.0/" class="bare">http://aws.amazon.com/apache2.0/</a> or in the "license" file accompanying this file. This code is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+<p>The software included with this paper is licensed under the Apache License, version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at <a href="http://aws.amazon.com/apache2.0/" class="bare">http://aws.amazon.com/apache2.0/</a> or in the accompanying "license" file. This code is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either expressed or implied. See the License for specific language governing permissions and limitations.</p>
 </div>
 </div>
 </div>
@@ -2288,7 +2280,7 @@ and to share your customizations with others.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-08-05 23:56:03 UTC
+Last updated 2020-08-12 17:20:27 UTC
 </div>
 </div>
 </body>
