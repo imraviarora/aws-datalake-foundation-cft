@@ -1,6 +1,1 @@
-
-=== Launch into an existing VPC
-include::data-lake.template.adoc[]
-
-=== Launch into a new VPC
-include::data-lake-master.template.adoc[]
+// placeholder
